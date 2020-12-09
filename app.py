@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route("/<int:id>")
+@app.route("/<id>")
 def home(id):
     url = 'https://world.openfoodfacts.org/api/v0/product/'+str(id)+'.json'
     f = urllib.request.urlopen(url)
