@@ -10,8 +10,7 @@ def home(id):
     url = 'https://world.openfoodfacts.org/api/v0/product/'+str(id)+'.json'
     f = urllib.request.urlopen(url)
     data = f.read()
-
     return data
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

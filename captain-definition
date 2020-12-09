@@ -6,6 +6,6 @@
 		"WORKDIR /app",
 		"RUN pip3 install -r requirements.txt",
 		"CMD [ \"python3\", \"app.py\" ]",
-		"EXPOSE 3000 3000"
+		"EXPOSE 5000 5000"
 	]
 }
